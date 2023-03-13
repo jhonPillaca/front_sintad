@@ -1,0 +1,36 @@
+.main-sidebar {
+    top: 71px;
+    background: #fff;
+
+    
+}
+.main-sidebar .sidebar {
+    margin-top: 0;
+}
+
+.main-sidebar:hover .image-user p{
+    margin-left: 10px !important;
+    display: inline !important;
+}
+.mrl{
+    margin-left: 2.2rem !important;
+}
+.image-user p{
+    margin-left: 10px;
+}
+
+.nav-small-cap{
+    border-top: 1px solid #aaa;
+}
+
+.nav-pills .nav-link.active,.nav-pills .nav-item.menu-open > .nav-link{
+    background-color: #fff !important;
+    color: #009efb !important;
+}
+.nav-link:hover{
+    color: #398bf7 !important;
+}
+
+
+
+

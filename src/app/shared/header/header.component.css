@@ -1,0 +1,404 @@
+header {
+    position: fixed;
+    width: 100%;
+    background: #05596e !important;
+    z-index: 50;
+    top: 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  }
+  header .navbar-expand-lg {
+    min-height: 65px;
+    padding: 0px;
+  }
+  header .navbar-expand-lg .navbar-logo {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    line-height: 66px;
+  }
+  header .navbar-expand-lg .navbar-collapse {
+    display: flex;
+  }
+  header .navbar-expand-lg .navbar-nav > .nav-item > .nav-link {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 17px;
+  }
+  header .navbar-expand-lg .mailbox {
+    width: 300px;
+  }
+  header .navbar-expand-lg .mailbox ul {
+    padding: 0;
+  }
+  header .navbar-logo {
+    background: #fff;
+  }
+  header .navbar-logo .nav-logo span {
+    transition: ease-in-out 1s;
+  }
+  header .navbar-collapse {
+    padding: 0 10px;
+  }
+  header .navbar-nav .nav-item > a.nav-link {
+    color: #fff;
+  }
+  header .dropdown-menu {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    border-color: rgba(120, 130, 140, 0.13);
+  }
+  .dropdown-menu{
+    display: initial;
+  }
+  li{
+    list-style: none;
+    cursor: pointer;
+  }
+
+  header .profile-pic {
+    width: 30px;
+    border-radius: 100%;
+  }
+  header ul.dropdown-user {
+    padding: 0;
+    min-width: 270px;
+  }
+  header ul.dropdown-user li {
+    padding: 0px;
+    margin: 0px;
+  }
+  header ul.dropdown-user li .user-box {
+    padding: 10px 15px;
+  }
+  header ul.dropdown-user li .user-box .user-img {
+    width: 70px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  header ul.dropdown-user li .user-box .user-img img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  header ul.dropdown-user li .user-box .user-text {
+    display: inline-block;
+    padding-left: 10px;
+  }
+  header ul.dropdown-user li .user-box .user-text h4 {
+    margin: 0px;
+    font-size: 15px;
+  }
+  header ul.dropdown-user li .user-box .user-text p {
+    margin-bottom: 2px;
+    font-size: 12px;
+  }
+  header ul.dropdown-user li .user-box .user-text .view-profile {
+    color: #ffffff !important;
+    padding: 5px 10px;
+    display: inline-block;
+    background: #ef5350;
+    border: 1px solid #ef5350;
+    border-radius: 60px;
+    box-shadow: 0 2px 2px 0 rgba(239, 83, 80, 0.1411764706), 0 3px 1px -2px rgba(239, 83, 80, 0.2), 0 1px 5px 0 rgba(239, 83, 80, 0.1215686275);
+    transition: 0.2s ease-in;
+  }
+  header ul.dropdown-user li .user-box .user-text .view-profile:hover {
+    background: #e6294b;
+    box-shadow: 0 14px 26px -12px rgba(239, 83, 80, 0.4196078431), 0 4px 23px 0 rgba(0, 0, 0, 0.1215686275), 0 8px 10px -5px rgba(239, 83, 80, 0.2);
+  }
+  header ul.dropdown-user li a {
+    padding: 9px 15px;
+    display: block;
+    color: #67757c;
+  }
+  header ul.dropdown-user li a:hover {
+    background: #e9edf2;
+    color: #398bf7 !important;
+  }
+  
+  .navbar-logo {
+    width: 269px;
+    min-width: 250px !important;
+    background: #fff;
+    padding-left: 10px;
+    line-height: 66px;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .nav-logo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
+    grid-auto-rows: 71px;
+    align-items: center;
+  }
+  .nav-logo b img {
+    width: 50px;
+  }
+  a:hover{
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .navbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .navbar-collapse {
+    flex-basis: 100%;
+    align-items: center;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    align-items: center;
+  }
+  
+  .mr-auto {
+    margin-right: auto;
+  }
+  
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  .navbar-expand-lg .navbar-nav .mailbox,
+  .navbar-expand-lg .navbar-nav .language,
+  .navbar-expand-lg .navbar-nav .profile {
+    right: 0;
+    left: auto;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    border-top: 1px solid rgba(120, 130, 140, 0.13);
+  }
+  
+  .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+  
+  .app-search {
+    position: absolute;
+    margin: 0px;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    z-index: 110;
+    width: 100%;
+    top: -13px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+    left: 0px;
+  }
+  .app-search .search-btn {
+    position: absolute;
+    top: 23px;
+    cursor: pointer;
+    background: #ffffff;
+    width: 15px;
+    height: 15px;
+    right: 20px;
+    font-size: 14px;
+  }
+  
+  .app-search input {
+    width: 100.5%;
+    padding: 25px 40px 44px 20px;
+    border-radius: 0px;
+    font-size: 17px;
+    transition: 0.3s ease-in;
+  }
+  
+  .notify {
+    position: relative;
+    top: -28px;
+    right: -7px;
+  }
+  .notify .point {
+    width: 6px;
+    height: 6px;
+    border-radius: 30px;
+    background-color: #ef5350;
+    position: absolute;
+    right: 6px;
+    top: 4px;
+  }
+  
+  .mailbox ul li .drop-title {
+    font-weight: 500;
+    padding: 11px 20px 15px;
+    border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+  }
+  .mailbox .messages {
+    height: 200px;
+    overflow: auto;
+    position: relative;
+  }
+  .mailbox .messages a {
+    border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+    display: block;
+    text-decoration: none;
+    padding: 9px 15px;
+  }
+  .mailbox .messages a .user-img {
+    width: 40px;
+    position: relative;
+    display: inline-block;
+    margin: 0 10px 15px 0;
+  }
+  .mailbox .messages a .user-img .profile-status {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    left: 30px;
+    position: absolute;
+    top: 1px;
+    width: 10px;
+  }
+  .mailbox .messages a .user-img .online {
+    background: #06d79c;
+  }
+  .mailbox .messages a .user-img .away {
+    background: #ef5350;
+  }
+  .mailbox .messages .mail-content {
+    display: inline-block;
+    width: 75%;
+    vertical-align: middle;
+  }
+  .mailbox .messages .mail-content .mail.desc,
+  .mailbox .messages .mail-content .time {
+    font-size: 12px;
+    display: block;
+    margin: 1px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #67757c;
+    white-space: nowrap;
+  }
+  .mailbox .messages .mail-content h5 {
+    font-size: 16px !important;
+  }
+  .mailbox .messages .mail-content span {
+    font-size: 12px !important;
+  }
+  .mailbox a:hover {
+    background: rgba(238, 238, 238, 0.7450980392);
+  }
+  
+  .ps {
+    touch-action: auto;
+    -ms-overflow-style: none;
+  }
+  
+  .messages::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+  }
+  
+  .messages:hover::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+  }
+  
+  .messages:hover::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  
+  .messages:hover::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: 0px none #fff;
+    border-radius: 10px;
+  }
+  
+  .messages:hover::-webkit-scrollbar-thumb {
+    background: #d2d2d2;
+  }
+  
+  .messages:hover::-webkit-scrollbar-thumb:active {
+    background: #8dd0d8;
+  }
+  
+  .messages:hover::-webkit-scrollbar-track {
+    background: transparent;
+    border: 0px solid #aaa;
+    border-radius: 5px;
+  }
+  
+  .messages:hover::-webkit-scrollbar-track:active {
+    background: #d2d2d2;
+  }
+  
+  .messages:hover::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+  
+  [role=button],
+  a {
+    touch-action: manipulation;
+  }
+  
+  .img-circle {
+    border-radius: 100%;
+  }
+  
+  .nav-item .nav-link .img-language {
+    width: 20px;
+    position: relative;
+    top: -3px;
+  }
+  
+  .img-language {
+    width: 20px;
+  }
+  
+  @media (max-width: 992px) {
+    .navbar-logo {
+      width: 74px;
+      min-width: 74px !important;
+    }
+    .navbar-logo .nav-logo span {
+      display: none;
+    }
+    header .navbar-expand-lg .nav-logo {
+      padding-left: 2px;
+    }
+  }
+  @media (max-width: 767px) {
+    .search-box {
+      display: none;
+    }
+    header .navbar-expand-lg .mailbox {
+      width: 270px;
+    }
+  }
+  .logo-active {
+    width: 250px !important;
+    min-width: 250px !important;
+    transition: ease-in-out 0.3s;
+  }
+  .logo-active .nav-logo span {
+    transition: ease-in-out 1s;
+    display: block !important;
+  }
+  
+  .left-sidebar {
+    width: 74px;
+    min-width: 74px !important;
+    transition: ease-in-out 0.3s;
+  }
+  .left-sidebar .nav-logo span {
+    transition: ease-in-out 0.5s;
+    display: none;
+  }

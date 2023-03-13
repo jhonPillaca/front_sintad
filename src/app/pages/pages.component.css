@@ -1,0 +1,12 @@
+
+
+.wrapper .content-wrapper {
+    margin-top: calc(4.5rem + 1px);
+}
+.wrapper #sidebar-overlay{
+    background-color: none;
+}
+.content-wrapper{
+    min-height: calc(100vh - 74px) !important;
+    color: #67757c;
+}

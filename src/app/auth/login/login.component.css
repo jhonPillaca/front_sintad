@@ -1,0 +1,81 @@
+.login-register {
+    height: 100%;
+    width: 100%;
+    padding: 10% 0;
+    color: #343a40;
+  }
+  .login-register .form-material a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-register .form-material a .logo-principal {
+    width: 84px;
+  }
+  .login-register .form-material a .logo-empresa {
+    width: 50px;
+  }
+  .login-register .form-material .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-register .form-material .social a {
+    color: #fff !important;
+  }
+  .login-register .form-material .social .btn-facebook {
+    background-color: #1a6cb3;
+  }
+  .login-register .form-material .social .btn-googleplus {
+    background-color: rgba(217, 40, 40, 0.8705882353);
+  }
+  
+  .login-box {
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  .login-box .footer {
+    width: 100%;
+    left: 0px;
+    right: 0px;
+  }
+  
+  .login-box .social {
+    display: block;
+    margin-bottom: 30px;
+  }
+  
+  #recoverform {
+    display: none;
+  }
+  
+
+  .login-sidebar .login-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .login {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #680197, #00ffbf, #c046f8);
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: "poppins", sans-serif;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: 0.5%;
+  }
+  
+  .login:hover {
+    background-position: right;
+  }

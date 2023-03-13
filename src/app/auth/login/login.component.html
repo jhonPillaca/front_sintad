@@ -1,0 +1,30 @@
+<section id="wrapper" class="login-register login-sidebar">
+    <div class="login-box card">
+        <div class="card-body">
+            <form [formGroup]="formLogin" class="form-horizontal form-material">
+                <a href="javascript:void(0)" class="text-center db">
+                    <img class="logo-principal" src="../../../assets/img/descarga.png" alt="Home" /><br />
+                    </a>
+                <mat-form-field style="width:100%">
+                    <mat-label>Usuario</mat-label>
+                    <input type="text" matInput formControlName="username">
+                    <mat-error *ngIf="validForm('username')">Ingresar usuario</mat-error>
+                
+                </mat-form-field>
+                <mat-form-field style="width:100%">
+                    <mat-label>Password</mat-label>
+                    <input type="text" matInput formControlName="username">
+                    <mat-error *ngIf="validForm('password')">Ingresar password</mat-error>
+                
+                </mat-form-field>
+
+                <div class="form-group text-center m-t-20">
+                    <div class="col-xs-12">
+                        <button class="btn btn-info btn-lg btn-block text-uppercase btn-rounded login"
+                            type="submit">Iniciar Sesion</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

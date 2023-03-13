@@ -1,0 +1,38 @@
+<mat-card>
+    <mat-card-title style="text-align: center;">{{ asignarTitulo() }}</mat-card-title>
+    <mat-card-content>
+        <form [formGroup]="formDialog">
+            <div class="field-form">
+
+                <mat-form-field class="input-field" *ngIf="tipDocment">
+                    <mat-label>Codigo</mat-label>
+                    <input type="text" matInput formControlName="codigo" maxlength="20" />
+                    <mat-error *ngIf="validarPorCampo('codigo')">Ingresar codigo</mat-error>
+                </mat-form-field>
+
+                <mat-form-field class="input-field">
+                    <mat-label>Nombre</mat-label>
+                    <input type="text" matInput formControlName="nombre" maxlength="100" />
+                    <mat-error *ngIf="validarPorCampo('nombre')">Ingresar nombre</mat-error>
+                </mat-form-field>
+
+                <mat-form-field class="input-field" *ngIf="tipDocment">
+                    <mat-label>Descripcion</mat-label>
+                    <input type="text" matInput formControlName="descripcion" maxlength="200" />
+                    <mat-error *ngIf="validarPorCampo('descripcion')">Ingresar descripcion</mat-error>
+                </mat-form-field>
+
+                <mat-checkbox
+                    formControlName="estado">Habilitar</mat-checkbox>
+
+            </div>
+        </form>
+    </mat-card-content>
+
+    <mat-card-actions style="text-align: end;">
+        <button mat-raised-button color="primary" (click)="saveAny()">Guardar</button>
+        <button mat-raised-button color="warn" (click)="closeDialogo()">
+            Cerrar
+        </button>
+    </mat-card-actions>
+</mat-card>
