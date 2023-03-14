@@ -8,7 +8,7 @@ export const environment = {
   token_auth_username:'appsintad',
   token_auth_password:'Sintad25',
   token_name:'token',
-  intentos:3
+  intentos:3 /// 
 };
 
 /*

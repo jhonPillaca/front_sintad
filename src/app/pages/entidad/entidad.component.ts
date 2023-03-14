@@ -38,7 +38,12 @@ export class EntidadComponent implements OnInit {
 
     this.entidadSerivice.getEntidadChange().subscribe(data=>{
       this.createTable(data);
+      console.log(data)
     });
+
+    this.entidadSerivice.findAll().subscribe(data =>{
+      this.createTable(data);
+    })
   }
 
 

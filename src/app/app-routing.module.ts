@@ -5,7 +5,7 @@ import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
-  {path:'pages',component:PagesComponent,loadChildren:()=>import('./pages/pages.module').then(r=>r.PagesModule)},
+  // {path:'',component:PagesComponent},
   {path:'',redirectTo:'login',pathMatch:'full'},
 
   {path:'**',component:NopagefoundComponent}

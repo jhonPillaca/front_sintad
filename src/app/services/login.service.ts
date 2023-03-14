@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
 })
 export class LoginService {
 
-  private url:string = `${environment.host}/auth/token`
+  private url:string = `${environment.host}/oauth/token`
 
   constructor(
     private http : HttpClient,
@@ -16,6 +16,7 @@ export class LoginService {
   ) { }
 
   login(username: string, password: string){
+    // console.log(username,password)
     const body = `grant_type=password&username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`;
 
     return this.http.post<any>(this.url, body, {

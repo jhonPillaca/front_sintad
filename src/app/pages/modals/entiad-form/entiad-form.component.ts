@@ -66,6 +66,7 @@ export class EntiadFormComponent implements OnInit {
   }
 
   createFormEdition(){
+    console.log(this.entidad.tipoDocumento)
     this.formEntidad = this.formBuilder.group({
       tipoDocumento     :[this.entidad.tipoDocumento.id_tipo_documento, Validators.required],
       nro_documento     :[this.entidad.nro_documento, Validators.required],
@@ -131,7 +132,7 @@ export class EntiadFormComponent implements OnInit {
     entidadObjeto.telefono          = this.formEntidad.controls['telefono'].value;
     entidadObjeto.estado            = this.formEntidad.controls['estado'].value;
 
-    
+    // console.log(entidadObjeto)
     if(this.entidad == undefined){
       this.entidadService.save(entidadObjeto).pipe(
         switchMap(() => {

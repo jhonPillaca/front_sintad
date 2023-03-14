@@ -21,6 +21,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     const tokenData = this.jwtHelper.decodeToken(sessionStorage.getItem(environment.token_name));
     this.userLogged= tokenData.user_name;
+    console.log(this.userLogged)
   }
 
 

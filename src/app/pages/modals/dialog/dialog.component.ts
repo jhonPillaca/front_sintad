@@ -37,12 +37,15 @@ export class DialogComponent implements OnInit {
   ngOnInit(): void {
 
     this.dataForm = { ...this.data }
+  
     this.tipoRegister = this.dataForm.type;
     this.tipoRegister=='documento' ?this.tipDocment=true :this.tipDocment = false;
-
+    this.typeContribuyent = this.dataForm.tipoContribuyente;
+    this.typeDocment = this.dataForm.tipoDocumento;
 
     
     this.selectForm();
+
   }
 
 
@@ -57,16 +60,16 @@ export class DialogComponent implements OnInit {
 
   createFormEdition() {
     this.formDialog = this.formBuilder.group({
-      codigo: this.tipoRegister == 'contribuyente' ? [''] : [this.typeDocment.codigo, Validators.required],
-      nombre: this.tipoRegister == 'contribuyente' ? [this.typeContribuyent.nombre, Validators.required] : [this.typeDocment.nombre, Validators.required],
-      descripcion: this.tipoRegister == 'contribuyente' ? [''] : [this.typeDocment.descripcion, Validators.required],
-      estado: this.tipoRegister == 'contribuyente' ? [this.typeContribuyent.estado, Validators.required] : [this.typeDocment.estado, Validators.required]
+      codigo: this.tipoRegister == 'contribuyente' ? [''] : [this.dataForm.tipoDocumento.codigo, Validators.required],
+      nombre: this.tipoRegister == 'contribuyente' ? [this.dataForm.tipoContribuyente.nombre, Validators.required] : [this.dataForm.tipoDocumento.nombre, Validators.required],
+      descripcion: this.tipoRegister == 'contribuyente' ? [''] : [this.dataForm.tipoDocumento.descripcion, Validators.required],
+      estado: this.tipoRegister == 'contribuyente' ? [this.dataForm.tipoContribuyente.estado, Validators.required] : [this.dataForm.tipoDocumento.estado, Validators.required]
     })
   }
 
   selectForm() {
 
-    if (this.typeDocment == undefined || this.typeContribuyent == undefined) {
+    if (this.typeDocment == undefined && this.typeContribuyent == undefined) {
       this.createForm();
       return;
     }

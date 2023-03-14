@@ -34,17 +34,19 @@ export class LoginComponent implements OnInit {
 
 
   login(){
-    this.formLogin.invalid;
+    console.log(this.formLogin)
+    if(this.formLogin.invalid){
     this.formLogin.markAllAsTouched();
     this.snackBar.open("Todos los campos son requeridos",'INFO',{duration:3000});
     return;
-
+    }
     const user = this.formLogin.controls['username'].value;
     const pass = this.formLogin.controls['password'].value;
 
     this.loginService.login(user,pass).subscribe(data =>{
+      console.log(data)
       sessionStorage.setItem(environment.token_name,data.access_token);
-      this.router.navigate(['pages/dashboard']);
+      this.router.navigate(['dashboard']);
     })
   }
 

@@ -13,14 +13,14 @@
                 </mat-form-field>
                 <mat-form-field style="width:100%">
                     <mat-label>Password</mat-label>
-                    <input type="text" matInput formControlName="username">
+                    <input type="password" matInput formControlName="password">
                     <mat-error *ngIf="validForm('password')">Ingresar password</mat-error>
                 
                 </mat-form-field>
 
                 <div class="form-group text-center m-t-20">
                     <div class="col-xs-12">
-                        <button class="btn btn-info btn-lg btn-block text-uppercase btn-rounded login"
+                        <button (click)="login()" class="btn btn-info btn-lg btn-block text-uppercase btn-rounded login"
                             type="submit">Iniciar Sesion</button>
                     </div>
                 </div>
